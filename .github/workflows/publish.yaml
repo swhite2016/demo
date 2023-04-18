@@ -12,7 +12,7 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: Build the demo Docker image
-      run:
-      docker build . --tag ghcr.io/swhite2016/demo:latest
-      docker run ghcr.io/swhite2016/demo:latest
-      docker push ghcr.io/swhite2016/demo:latest
+      run: |
+        docker build . --tag ghcr.io/swhite2016/demo:latest
+        docker run ghcr.io/swhite2016/demo:latest
+        docker push ghcr.io/swhite2016/demo:latest
