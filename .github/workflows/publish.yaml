@@ -12,6 +12,6 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: |
-      docker build . --tag ghcr.io/swhite2016/hello-docker-gcr-demo:latest
-      docker run ghcr.io/swhite2016/hello-docker-gcr-demo:latest
-      docker push ghcr.io/swhite2016/hello-docker-gcr-demo:latest
+      docker build . --tag ghcr.io/swhite2016/demo:latest
+      docker run ghcr.io/swhite2016/demo:latest
+      docker push ghcr.io/swhite2016/demo:latest
